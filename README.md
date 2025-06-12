@@ -1,40 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<h1>🛍️ Mini Product Showcase</h1>
 
-## Getting Started
+<p>
+  This project is a small web application built with
+  <strong>Next.js</strong> (Pages Router), <strong>TypeScript</strong>, and
+  <strong>Tailwind CSS</strong>.
+</p>
 
-First, run the development server:
+<p>
+  The goal is to implement a simple product showcase that displays a list of
+  products and individual product detail pages, based on provided data.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<hr />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>🧩 Task</h2>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<h3>Pages</h3>
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<ul>
+  <li>
+    <code>/</code> — <strong>Home page</strong>
+    <ul>
+      <li>Displays a simple introduction.</li>
+      <li>Shows a selection of featured products.</li>
+    </ul>
+  </li>
+  <li>
+    <code>/products</code> — <strong>Products page</strong>
+    <ul>
+      <li>Displays all products in a responsive grid layout.</li>
+      <li>Shows product name, price, image (if available), and manufacturer.</li>
+    </ul>
+  </li>
+  <li>
+    <code>/products/[id]</code> — <strong>Product detail page</strong>
+    <ul>
+      <li>Displays full details of the selected product.</li>
+      <li>Handles cases where an invalid product ID is entered.</li>
+    </ul>
+  </li>
+</ul>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+<h3>Components</h3>
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p>
+  Please implement reusable React components where appropriate:
+</p>
 
-## Learn More
+<ul>
+  <li><code>Header</code> — with navigation links to <code>/</code> and <code>/products</code></li>
+  <li><code>ProductCard</code> — displays basic product info (used in product lists)</li>
+  <li><code>ProductList</code> — displays a grid of <code>ProductCard</code> components</li>
+  <li><code>ProductDetail</code> — displays full product details</li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+<p>You can add additional components as needed.</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+<h3>Styling</h3>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<ul>
+  <li>Use <strong>Tailwind CSS</strong> for styling.</li>
+  <li>Ensure the layout is <strong>responsive</strong> on mobile and desktop.</li>
+  <li>No need for pixel-perfect design — focus on clarity and usability.</li>
+</ul>
 
-## Deploy on Vercel
+<h3>Data</h3>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p>
+  You will find the product data in <code>products.ts</code> inside the <code>data</code> folder in the root of the project.
+</p>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+<p>
+  The file contains an array of products based on our backend API. You can use this data to render the product list and product details.
+</p>
+
+<h3>Bonus Task (Optional)</h3>
+
+<p>
+   If you have time, feel free to implement one of the following:
+</p>
+
+<ul>
+  <li>Set up a testing library (e.g. <a href="https://testing-library.com/docs/react-testing-library/intro/">React Testing Library</a> + Jest) and write one or more simple component tests.</li>
+  <li>Add basic filtering or sorting on the <code>/products</code> page (e.g. filter by manufacturer or sort by price).</li>
+</ul>
+
+<p>
+  The bonus task is optional and not required for completing the main task.
+</p>
+
+
+
+<hr />
+
+<h2>🏃 Getting Started</h2>
+
+<h3>Install dependencies</h3>
+
+<pre><code>yarn install</code></pre>
+
+<h3>Run the development server</h3>
+
+<pre><code>yarn dev</code></pre>
+
+<p>
+  Open your browser at <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to view the application.
+</p>
+
+<hr />
+
+<h2>🚀 Tech Stack</h2>
+
+<ul>
+  <li><a href="https://nextjs.org/">Next.js</a> (Pages Router)</li>
+  <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+  <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+  <li><a href="https://prettier.io/">Prettier</a> for code formatting</li>
+</ul>
+
+<hr />
+
+<p>Have fun and happy coding! 🎉</p>
